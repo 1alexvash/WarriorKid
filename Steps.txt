@@ -1,6 +1,7 @@
 
 
 
-7. align text
-8. chose font
-9. align pictures
+
+
+10. set up favicon
+11. set up preview page

@@ -21,15 +21,84 @@ input {
 }
 
 body {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body.theme-light {
   background: lightgrey;
 }
 
+body.theme-dark {
+  background: #1a1a1a;
+  color: white;
+}
+
+body.theme-dark .Book {
+  background: black;
+}
+
+body.theme-sepia {
+  background: peru;
+}
+
+body.theme-sepia .Book {
+  background: #f7ece1;
+}
+
+body.text-size-small h1 {
+  font-size: 20px;
+}
+
+body.text-size-small P {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+body.text-size-normal h1 {
+  font-size: 24px;
+}
+
+body.text-size-normal P {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+body.text-size-big h1 {
+  font-size: 28px;
+}
+
+body.text-size-big P {
+  font-size: 24px;
+  line-height: 50px;
+}
+
 .Book {
-  width: 480px;
   margin: auto;
   padding: 20px;
   background: white;
   font-family: "Roboto";
+}
+
+.Book.width-narrow {
+  width: 400px;
+}
+
+.Book.width-normal {
+  width: 480px;
+}
+
+.Book.width-wide {
+  width: 640px;
+}
+
+@media (max-width: 768px) {
+  .Book {
+    width: 100%;
+  }
+}
+
+.Book .controllers {
   font-size: 20px;
 }
 
@@ -42,7 +111,6 @@ body {
 }
 
 .Book h1 {
-  font-size: 24px;
   text-align: center;
   color: orangered;
   text-shadow: 1px 2px 2px #333;
@@ -52,7 +120,6 @@ body {
 .Book p {
   text-indent: 25px;
   margin: 5px 0;
-  line-height: 40px;
 }
 
 .Book img {

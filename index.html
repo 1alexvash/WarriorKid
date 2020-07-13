@@ -11,8 +11,26 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <div class="Book">
+
+  <body class="theme-light text-size-normal">
+    <div class="Book width-normal">
+      <div class="controllers">
+        <select id="page-width">
+          <option value="narrow">Narrow</option>
+          <option selected="selected" value="normal">Normal</option>
+          <option value="wide">Wide</option>
+        </select>
+        <select id="page-theme">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+          <option value="sepia">Sepia</option>
+        </select>
+        <select id="page-text-size">
+          <option value="small">Small</option>
+          <option selected="selected" value="normal">Normal</option>
+          <option value="big">Big</option>
+        </select>
+      </div>
       <div class="chapter">
         <h1>CHAPTER 1: THE WORST YEAR</h1>
         <p>
@@ -706,5 +724,7 @@
         </p>
       </div>
     </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

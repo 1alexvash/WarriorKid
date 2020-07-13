@@ -2,16 +2,75 @@
 @import "responsive";
 
 body {
-  background: lightgrey;
+  &.theme-light {
+    background: lightgrey;
+  }
+  &.theme-dark {
+    background: lighten(black, 10%);
+    color: white;
+    .Book {
+      background: black;
+    }
+  }
+  &.theme-sepia {
+    background: peru;
+    .Book {
+      background: lighten(peru, 40%);
+    }
+  }
+  &.text-size-small {
+    h1 {
+      font-size: 20px;
+    }
+    P {
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+  &.text-size-normal {
+    h1 {
+      font-size: 24px;
+    }
+    P {
+      font-size: 20px;
+      line-height: 40px;
+    }
+  }
+  &.text-size-big {
+    h1 {
+      font-size: 28px;
+    }
+    P {
+      font-size: 24px;
+      line-height: 50px;
+    }
+  }
+  transition: 0.5s;
 }
 
 .Book {
-  width: 480px;
   margin: auto;
   padding: 20px;
   background: white;
   font-family: "Roboto";
-  font-size: 20px;
+  &.width-narrow {
+    width: 400px;
+  }
+  &.width-normal {
+    width: 480px;
+  }
+  &.width-wide {
+    width: 640px;
+  }
+
+  @include responsive(768px) {
+    width: 100%;
+  }
+
+  .controllers {
+    font-size: 20px;
+  }
+
   .chapter {
     border-bottom: 3px solid orangered;
     &:first-child {
@@ -21,7 +80,6 @@ body {
     }
   }
   h1 {
-    font-size: 24px;
     text-align: center;
     color: orangered;
     text-shadow: 1px 2px 2px #333;
@@ -30,7 +88,6 @@ body {
   p {
     text-indent: 25px;
     margin: 5px 0;
-    line-height: 40px;
   }
   img {
     width: 100%;

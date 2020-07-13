@@ -96,6 +96,9 @@ body.text-size-big P {
   .Book {
     width: 100%;
   }
+  .Book .controllers #page-width {
+    display: none;
+  }
 }
 
 .Book .controllers {

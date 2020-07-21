@@ -103,6 +103,12 @@ body.text-size-big P {
 
 .Book .controllers {
   font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.Book .controllers select {
+  border: 1px solid black;
+  border-radius: 4px;
 }
 
 .Book .chapter {

@@ -74,6 +74,11 @@ body {
 
   .controllers {
     font-size: 20px;
+    margin-bottom: 20px;
+    select {
+      border: 1px solid black;
+      border-radius: 4px;
+    }
   }
 
   .chapter {

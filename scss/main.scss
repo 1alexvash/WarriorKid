@@ -64,7 +64,7 @@ body {
   }
 
   @include responsive(768px) {
-    width: 100%;
+    width: 100% !important;
     .controllers {
       #page-width {
         display: none;

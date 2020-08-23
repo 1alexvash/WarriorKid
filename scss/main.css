@@ -94,7 +94,7 @@ body.text-size-big P {
 
 @media (max-width: 768px) {
   .Book {
-    width: 100%;
+    width: 100% !important;
   }
   .Book .controllers #page-width {
     display: none;

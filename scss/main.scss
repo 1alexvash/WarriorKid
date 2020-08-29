@@ -54,16 +54,16 @@ body {
   background: white;
   font-family: "Roboto";
   &.width-narrow {
-    width: 400px;
+    width: 480px;
   }
   &.width-normal {
-    width: 480px;
+    width: 560px;
   }
   &.width-wide {
     width: 640px;
   }
 
-  @include responsive(768px) {
+  @include responsive(720px) {
     width: 100% !important;
     .controllers {
       #page-width {

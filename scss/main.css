@@ -81,18 +81,18 @@ body.text-size-big P {
 }
 
 .Book.width-narrow {
-  width: 400px;
+  width: 480px;
 }
 
 .Book.width-normal {
-  width: 480px;
+  width: 560px;
 }
 
 .Book.width-wide {
   width: 640px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 720px) {
   .Book {
     width: 100% !important;
   }
